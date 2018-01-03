@@ -1,0 +1,51 @@
+.nav > li > a{
+	font-size: 15px;
+}
+.banner .carousel{
+	border: 1px solid black;
+}
+img.card-img-top {
+    width: 100%;
+}
+.experience {
+	font-size:0;	
+}
+.experience  li{
+	font-size: 13px;
+	position: relative;
+}
+/* .experience li:nth-child(2),.experience li:nth-child(6){
+	border-left:1px solid black;
+} */
+/* .experience li:nth-child(3){
+	border-right: 1px solid black;
+} */
+.experience li:nth-child(2):before,.experience li:nth-child(6):before{
+	border-left:2px solid black;
+	content:'';
+	height: 100%;
+	position: absolute;
+	left: -1px;
+}
+.experience li:nth-child(3):before{
+	border-right: 2px solid black;
+	content:'';
+	height: 100%;
+	position: absolute;
+	right: -1px;
+}
+.experience li:nth-child(2):after,.experience li:nth-child(3):after,.experience li:nth-child(6):after{
+	content:'';
+	width:10px;
+	height:10px;
+	display: inline-block;
+	border-radius:100%;
+	background: #000;
+	position: absolute;
+	top:0;
+	left: -5px;
+}
+.experience li:nth-child(3):after{
+	
+	left: 96%;
+}
