@@ -66,7 +66,7 @@
 		background-color: #33b5e5;
 	}
 
-		.scroll-box {
+	.scroll-box {
 		position: relative;
 	}
 	.scrollspy-example {
@@ -74,17 +74,119 @@
 		overflow-y: scroll;
 		/* height: 200px;  */
 	}
-	#top-scroll {
+	.scroll-top{
 		width: 50px;
 		height: 50px;
 		border-radius: 100%;
 		background: #2196F3;
 		position: fixed;
-		bottom: 75px;
+		bottom: -70px;
 		right: 20px;
-}
+		transition: all ease 0.5s;
+	}
+	.scroll-top.open-tab{
+		bottom: 35px;
+	}
+	.scroll-top span{
+		padding: 15px;
+		cursor: pointer;
+		color: #ffffff;
+	}
+	body{
+		position: relative;
+		overflow-x:hidden;
+	}
+	#contact{
+		background: #2196F3;
+	}
+	#contact-form  .md-form input,#contact-form  .md-form textarea{
+		background: #ffffff;
+		border-radius: 5px;
+	}
+	.about-section h2{
+		color:#ffffff;
+	}
+	.about-section .section-description{
+			color:#ffffff;
+	}
+	footer.page-footer{
+		padding-top: 0;
+		margin-top: 0;
+	}
+	.white{
+		background: #ffffff;
+	}
+	.experience-section{
+		background-image: url(../../image/img2.png);
+		background-size: 100%;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		padding-bottom: 120px;
+		
 	}
 	
+	.scroll-box {
+	position: relative;
+	}
+	.scrollspy-example {
+	position: relative;
+	overflow-y: scroll;
 	
-	
-	
+	}
+	.md-form label.active{
+		-webkit-transform: translateY(-70%);
+		-ms-transform: translateY(-70%);
+		transform: translateY(-70%);
+		color: #ffffff !important;
+		font-weight: 500;
+	}
+	#work .row .col-sm-6{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+/* animation	 */
+	.animation .a-left{
+		-moz-transition: all 500ms linear;
+		-webkit-transition: all 500ms linear;
+		-o-transition: all 500ms linear;
+		transition: all 500ms linear;
+		-moz-transform:translateX(-100%);
+		-webkit-transform:  translateX(-100%);
+		-o-transform: translateX(-100%);
+		-ms-transform:  translateX(-100%);
+		transform: translateX(-100%);
+	}
+	.animation.current .a-left{
+		-moz-transition: all 1000ms linear;
+		-webkit-transition: all 1000ms linear;
+		-o-transition: all 1000ms linear;
+		transition: all 1000ms linear;
+		-moz-transform:translateX(0%);
+		-webkit-transform:  translateX(0%);
+		-o-transform: translateX(0%);
+		-ms-transform:  translateX(0%);
+		transform: translateX(-0%);
+	}
+	.animation .a-right{
+		-moz-transition: all 500ms linear;
+		-webkit-transition: all 500ms linear;
+		-o-transition: all 500ms linear;
+		transition: all 500ms linear;
+		-moz-transform:translateX(100%);
+		-webkit-transform:  translateX(100%);
+		-o-transform: translateX(100%);
+		-ms-transform:  translateX(100%);
+		transform: translateX(100%);
+	}
+	.animation.current .a-right{
+		-moz-transition: all 1000ms linear;
+		-webkit-transition: all 1000ms linear;
+		-o-transition: all 1000ms linear;
+		transition: all 1000ms linear;
+		-moz-transform:translateX(0%);
+		-webkit-transform:  translateX(0%);
+		-o-transform: translateX(0%);
+		-ms-transform:  translateX(0%);
+		transform: translateX(-0%);
+	}
+/* animation-end	 */
