@@ -1,5 +1,22 @@
 /* Your custom styles */
+	
+/* Profile-grid */
+	.grid-img{
+		height: 200px;
+		width: 250px;
+		background-position: left top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		webkit-transition: all 3s cubic-bezier(0.23, 1, 0.32, 1);
+		transition: all 3s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	.direction-reveal__card:hover .grid-img{
+		-webkit-transition: all 3s cubic-bezier(0.57,0.31,0.44,0.86);
+		transition: all 3s cubic-bezier(0.57,0.31,0.44,0.86);
+		background-position: left bottom;
+	}
 
+/* Profile-grid-end*/	
 	.experience .w-50{
 		width: 49% !important;
 	}
@@ -74,6 +91,7 @@
 		overflow-y: scroll;
 		/* height: 200px;  */
 	}
+/* scroll-top */
 	.scroll-top{
 		width: 50px;
 		height: 50px;
@@ -92,7 +110,7 @@
 		cursor: pointer;
 		color: #ffffff;
 	}
-	.scroll-top {
+	.scroll-top.open-tab {
 		  animation: bounce 1.5s infinite;
     -webkit-animation: bounce 1.5s infinite;
     -moz-animation: bounce 1.5s infinite;
@@ -120,6 +138,7 @@
 		40% {transform: translateY(-30px);}
 		60% {transform: translateY(-15px);}
 	}
+/* scroll-top-end */
 	body{
 		position: relative;
 		overflow-x:hidden;
@@ -154,12 +173,11 @@
 	}
 	
 	.scroll-box {
-	position: relative;
+		position: relative;
 	}
 	.scrollspy-example {
-	position: relative;
-	overflow-y: scroll;
-	
+		position: relative;
+		overflow-y: scroll;	
 	}
 	.md-form label.active{
 		-webkit-transform: translateY(-70%);
